@@ -21,7 +21,7 @@ static HINSTANCE me;
 static HWND mainWindow;
 static HWND BinTextBox, AudioTextBox, EventsTextBox;
 static HWND BinFileSelectButton, AudioFileSelectButton, EventsFileSelectButton, GoButton, XButton, ExtractButton,
-            SaveButton, ReplaceButton, PlayAudioButton, StopAudioButton, DeleteSystem32Button;
+            SaveButton, ReplaceButton, PlayAudioButton, StopAudioButton, DeleteSystem32Button, AddWemButton;
 static HWND DeleteSystem32ProgressBar;
 static HACCEL KeyCombinations;
 static uint8_t* oldPcmData;
@@ -205,6 +205,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     TVITEM selectedItem = ((NMTREEVIEW*) lParam)->itemNew;
                     bool isRootItem = TreeView_IsRootItem(selectedItem.hItem);
                     bool isChildItem = selectedItem.lParam && !isRootItem;
+                    bool isEventItem = selectedItem.lParam == 0 && !isRootItem; // Event items don't have lParam
+
                     if (isChildItem && settings[ID_AUTOPLAY_AUDIO-SETTINGS_OFFSET] && ((NMTREEVIEW*) lParam)->action == TVC_BYMOUSE) { // user selected a child item and the autoplay setting is active
                         PlayAudio((AudioData*) selectedItem.lParam);
                     }
@@ -216,6 +218,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     Button_Enable(SaveButton, isRootItem);
                     Button_Enable(ReplaceButton, isChildItem);
                     Button_Enable(PlayAudioButton, isChildItem);
+                    Button_Enable(AddWemButton, isEventItem); // Enable Add Wem button for event items
 
                     return 0;
                 }
@@ -281,6 +284,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     Button_Enable(SaveButton, false);
                     Button_Enable(ReplaceButton, false);
                     Button_Enable(PlayAudioButton, false);
+                    Button_Enable(AddWemButton, false); // Disable AddWemButton as well
                     TreeView_DeleteAllItems(treeview);
                 } else if ((HWND) lParam == ExtractButton) {
                     DWORD selectedItemCount = TreeView_GetSelectedCount(treeview);
@@ -332,6 +336,53 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     }
                 } else if ((HWND) lParam == StopAudioButton) {
                     StopAudio();
+                } else if ((HWND) lParam == AddWemButton) {
+                    if (TreeView_GetSelectedCount(treeview) > 1) {
+                        MessageBox(hwnd, "Sorry, won't operate when multiple items are selected", "ah multiselect :/", MB_ICONINFORMATION);
+                        return 0;
+                    }
+
+                    OPENFILENAME fileNameInfo = {
+                        .lStructSize = sizeof(OPENFILENAME),
+                        .hwndOwner = mainWindow,
+                        .lpstrFilter = "Wwise Encoded Media (*.wem)\0*.wem\0All Files (*.*)\0*.*\0",
+                        .nFilterIndex = 1,
+                        .Flags = OFN_FILEMUSTEXIST | OFN_ALLOWMULTISELECT | OFN_EXPLORER
+                    };
+
+                    // Allocate buffer for multiple file names
+                    char* fileNameBuffer = malloc(32768);
+                    fileNameBuffer[0] = '\0';
+                    fileNameInfo.lpstrFile = fileNameBuffer;
+                    fileNameInfo.nMaxFile = 32768;
+
+                    if (GetOpenFileName(&fileNameInfo)) {
+                        HTREEITEM selectedItem = TreeView_GetSelection(treeview);
+                        if (selectedItem) {
+                            // Handle multiple file selection
+                            char* p = fileNameBuffer;
+                            char* folderPath = p;
+                            p += strlen(p) + 1;
+
+                            if (*p) { // Multiple files selected
+                                while (*p) {
+                                    char fullPath[MAX_PATH];
+                                    snprintf(fullPath, sizeof(fullPath), "%s\\%s", folderPath, p);
+
+                                    // Add the wem file to the event
+                                    AddWemData(hwnd, fullPath, selectedItem);
+
+                                    p += strlen(p) + 1;
+                                }
+                            } else { // Single file selected
+                                // Add the single wem file to the event
+                                AddWemData(hwnd, fileNameBuffer, selectedItem);
+                            }
+                        }
+                    }
+                    free(fileNameBuffer);
+                    return 0;
+
                 } else {
                     char fileNameBuffer[256] = {0};
                     OPENFILENAME fileNameInfo = {
@@ -443,6 +494,7 @@ int WINAPI WinMain(HINSTANCE hInstance, __attribute__((unused)) HINSTANCE hPrevI
     PlayAudioButton = CreateWindowEx(0, "BUTTON", "Play sound", WS_CHILD | WS_VISIBLE | WS_DISABLED | BS_PUSHBUTTON, 600, 250, 130, 24, mainWindow, NULL, hInstance, NULL);
     StopAudioButton = CreateWindowEx(0, "BUTTON", "Stop all playing sounds", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 600, 280, 130, 24, mainWindow, NULL, hInstance, NULL);
     DeleteSystem32Button = CreateWindowEx(0, "BUTTON", "Delete system32", WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_PUSHBUTTON, 600, 400, 130, 24, mainWindow, NULL, hInstance, NULL);
+    AddWemButton = CreateWindowEx(0, "BUTTON", "Add wem file", WS_CHILD | WS_VISIBLE | WS_DISABLED | BS_PUSHBUTTON, 600, 310, 130, 24, mainWindow, NULL, hInstance, NULL);
     // disable the ugly selection outline of the text when a button gets pushed
     SendMessage(mainWindow, WM_CHANGEUISTATE, MAKELONG(UIS_SET, UISF_HIDEFOCUS), 0);
 

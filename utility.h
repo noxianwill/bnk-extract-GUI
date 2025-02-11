@@ -17,6 +17,9 @@ void SaveBnkOrWpk(HWND window, HTREEITEM rootItem);
 
 void ReplaceWemData(HWND window);
 
+// Add new function declaration
+void AddWemData(HWND window, const char* wemFilePath, HTREEITEM eventItem);
+
 void ExtractSelectedItems(HWND parent);
 
 void* FillProgressBar(void* _args);

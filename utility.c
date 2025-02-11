@@ -6,6 +6,7 @@
 #include <shlobj.h>
 #include <direct.h>
 #include <dwmapi.h>
+#include <time.h>  // Added for time() function
 
 #include "utility.h"
 #include "settings.h"
@@ -288,7 +289,91 @@ void ReplaceWemData(HWND window)
     free(selectedChildItemsDataList.objects);
 }
 
-static void ExtractItems(HTREEITEM hItem, wchar_t* output_path)
+void AddWemData(HWND window, const char* wemFilePath, HTREEITEM eventItem)
+{
+    if (!wemFilePath || !eventItem) return;
+
+    // Get the root item (containing AudioDataList)
+    HTREEITEM rootItem = TreeView_GetRoot(treeview);
+    if (!rootItem) {
+        MessageBox(window, "No root item found", "Error", MB_ICONERROR);
+        return;
+    }
+
+    // Get the AudioDataList from the root item
+    TVITEM rootTvItem = {
+        .mask = TVIF_PARAM,
+        .hItem = rootItem
+    };
+    TreeView_GetItem(treeview, &rootTvItem);
+    AudioDataList* wemDataList = (AudioDataList*) rootTvItem.lParam;
+    if (!wemDataList) {
+        MessageBox(window, "No wem data list found", "Error", MB_ICONERROR);
+        return;
+    }
+
+    // Read the new wem file
+    FILE* newDataFile = fopen(wemFilePath, "rb");
+    if (!newDataFile) {
+        char errorMessage[512];
+        snprintf(errorMessage, sizeof(errorMessage), "Failed to open file \"%s\"", wemFilePath);
+        MessageBox(window, errorMessage, "Failed to open wem file", MB_ICONERROR);
+        return;
+    }
+
+    // Get file size and read data
+    fseek(newDataFile, 0, SEEK_END);
+    uint32_t fileLength = ftell(newDataFile);
+    uint8_t* fileData = malloc(fileLength);
+    rewind(newDataFile);
+    fread(fileData, fileLength, 1, newDataFile);
+    fclose(newDataFile);
+
+    // Generate a new unique ID for the wem file
+    // Find the highest existing ID and increment it
+    uint32_t maxId = 0;
+    for (uint32_t i = 0; i < wemDataList->length; i++) {
+        if (wemDataList->objects[i].id > maxId) {
+            maxId = wemDataList->objects[i].id;
+        }
+    }
+    uint32_t newId = maxId + 1;
+    if (newId < 100000000) { // Ensure ID is at least 9 digits
+        newId = 100000000;
+    }
+
+    // Create new AudioData entry
+    AudioData newWemData = {
+        .id = newId,
+        .length = fileLength,
+        .data = fileData
+    };
+
+    // Add to the AudioDataList
+    wemDataList->objects = realloc(wemDataList->objects, (wemDataList->length + 1) * sizeof(AudioData));
+    wemDataList->objects[wemDataList->length] = newWemData;
+    wemDataList->length++;
+
+    // Add new item to tree view under the event
+    char itemText[32];
+    snprintf(itemText, sizeof(itemText), "%u", newId);
+    TVINSERTSTRUCT newItemInfo = {
+        .hParent = eventItem,
+        .hInsertAfter = TVI_LAST,
+        .item = {
+            .mask = TVIF_TEXT | TVIF_PARAM,
+            .pszText = itemText,
+            .lParam = (LPARAM)&wemDataList->objects[wemDataList->length - 1]
+        }
+    };
+    HTREEITEM newItem = TreeView_InsertItem(treeview, &newItemInfo);
+    if (!newItem) {
+        MessageBox(window, "Failed to add new item to tree view", "Error", MB_ICONERROR);
+        return;
+    }
+}
+
+void ExtractItems(HTREEITEM hItem, wchar_t* output_path)
 {
     // check whether this is a "global" root item. If so, do not use its (path-like) label text and abuse the fact "//" is equivalent to "/"
     bool isRootItem = TreeView_IsRootItem(hItem);
