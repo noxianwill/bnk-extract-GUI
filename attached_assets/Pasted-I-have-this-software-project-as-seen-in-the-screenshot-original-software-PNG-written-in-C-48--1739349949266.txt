@@ -1,0 +1,52 @@
+I have this software project as seen in the screenshot "original software.PNG" written in:
+
+C: 48.6%
+HTML: 21.9%
+Shell: 14.4%
+Makefile: 9.1%
+TeX: 2.8%
+C++: 1.4%
+Other: 1.8%
+
+You see in the screenshot "Replace wem data", that button's function is to replace the selected .wem file from that tree view (the .wem file has to be selected so the button is clickable).
+
+For now, this software has only the functionality to replace the .wem file, but the software doesn't have "Add wem data" function, which I want to add to this project software.
+
+I added this function:
+
+The user clicks on the event from the tree view (example event: Play_vo_Announcer_Female1_AceBlue)
+Then the "Add wem file" button is clickable, and when the user clicks on that button, a multiple file select dialog appears to select .wem files, to be added to that selected event from the tree view.
+Then the user saves the modifications, by clicking the "save as bnk/wpk" after adding the wem files (same logic as if the user used the "Replace wem data" function)
+
+So the, the opened and modified .wpk or .bnk file (via add wem data) is saved with the added wem data.
+
+After saving the bnk/wpk file, I open it again, and I see the .wem files I added are not mapped to the events I mapped them to earlier, also the extension .wem is not shown in the files in the tree view as seen in the other screenshot "issue.PNG". You see that there are some wem files correctly mapped to their events, but that is the original .wpk file how it was made.
+
+-> when i click on an even or event node, i'm able to add .wem files
+-> after adding .wem files, the file extension is not showing (original wpk file with original .wem files showing the extension)
+-> drag and drop of .wem files is not working when an even or event node is selected
+
+the software doesn't attach the added .wem file to an even or event node (need to attach it) but instead it's added but not attached to any event, possibly we should also consider saving the events bnk file too (just like "save as bnk/wpk" button)
+
+as far as i know (up to you to check), events bnk file has the following as an example:
+
+Header
+├── Data Section
+│   ├── Event ID: 0x12345678
+│   ├── Action Type: Play Sound
+│   ├── Target ID: 0x87654321 (Sound or WEM ID which can be multiple WEM IDs/Files)
+│   ├── Other Parameters
+│
+├── HIRC (Hierarchical Structure)
+│   ├── Event (ID: 0x12345678)
+│   │   ├── Event Node: 0x56789ABC
+│   │   │   ├── Action: Play WEM ID 1234
+│   │   │   ├── Action: Stop WEM ID 5678
+│   │
+│   ├── Sound (ID: 0x87654321)
+│   │   ├── WEM ID: 1234 (Sound or WEM ID which can be multiple WEM IDs/Files)
+│   │   ├── Properties (Volume, Loop, Pitch, etc.)
+│
+├── SoundBank Information
+
+we should consider this with the feature we want to add.

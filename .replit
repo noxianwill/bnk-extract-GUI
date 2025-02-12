@@ -1,0 +1,4 @@
+modules = ["c-clang14", "web", "bash"]
+
+[nix]
+channel = "stable-24_05"
