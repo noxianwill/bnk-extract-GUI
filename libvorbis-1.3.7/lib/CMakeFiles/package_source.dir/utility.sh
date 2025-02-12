@@ -1,4 +1,4 @@
 set -e
 
-cd /home/Walid/WemDataManager
-/usr/bin/cpack.exe --config ./CPackSourceConfig.cmake /home/Walid/WemDataManager/CPackSourceConfig.cmake
+cd /home/Walid/bnk-extract-GUI
+/usr/bin/cpack.exe --config ./CPackSourceConfig.cmake /home/Walid/bnk-extract-GUI/CPackSourceConfig.cmake

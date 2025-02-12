@@ -1,4 +1,4 @@
-# Install script for directory: /home/Walid/WemDataManager/libvorbis-1.3.7/lib
+# Install script for directory: /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,27 +47,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/vorbis" TYPE FILE FILES
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/../include/vorbis/codec.h"
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/../include/vorbis/vorbisenc.h"
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/../include/vorbis/vorbisfile.h"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/../include/vorbis/codec.h"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/../include/vorbis/vorbisenc.h"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/../include/vorbis/vorbisfile.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/libvorbis.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/libvorbis.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/libvorbisenc.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/libvorbisenc.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/libvorbisfile.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/libvorbisfile.a")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/Walid/WemDataManager/libvorbis-1.3.7/lib/install_local_manifest.txt"
+  file(WRITE "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/Walid/WemDataManager/
+cmake_ninja_workdir = /home/Walid/bnk-extract-GUI/
 # =============================================================================
 # Object build statements for EXECUTABLE target bnk-extract-GUI
 
@@ -44,162 +44,126 @@ cmake_ninja_workdir = /home/Walid/WemDataManager/
 
 build cmake_object_order_depends_target_bnk-extract-GUI: phony || cmake_object_order_depends_target_ogg cmake_object_order_depends_target_vorbis cmake_object_order_depends_target_vorbisenc cmake_object_order_depends_target_vorbisfile
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bin.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/bin.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bin.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/bin.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bin.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bnk.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/bnk.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bnk.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/bnk.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bnk.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/extract.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/extract.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/extract.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/extract.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/extract.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/general_utils.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/general_utils.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/general_utils.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/general_utils.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/general_utils.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/revorb/revorb.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/revorb/revorb.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/revorb/revorb.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/revorb/revorb.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/revorb/revorb.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/revorb
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/sound.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/sound.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/sound.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/sound.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/sound.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/wpk.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/wpk.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/wpk.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/wpk.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/wpk.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/codebook.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/ww2ogg/codebook.cpp || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/codebook.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/ww2ogg/codebook.cpp || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/codebook.cpp.o.d
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/crc.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/ww2ogg/crc.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/crc.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/ww2ogg/crc.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/crc.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/ww2ogg.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/ww2ogg/ww2ogg.cpp || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/ww2ogg.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/ww2ogg/ww2ogg.cpp || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/ww2ogg.cpp.o.d
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/wwriff.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/bnk-extract/ww2ogg/wwriff.cpp || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/wwriff.cpp.o: CXX_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/bnk-extract/ww2ogg/wwriff.cpp || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/wwriff.cpp.o.d
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/IDropTarget.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/IDropTarget.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/IDropTarget.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/IDropTarget.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/IDropTarget.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/gui.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/gui.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/gui.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/gui.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/gui.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/manifest.rc.obj: RC_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/manifest.rc || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/manifest.rc.obj: RC_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/manifest.rc || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/manifest.rc.obj.d
-  INCLUDES = -I /home/Walid/WemDataManager/libogg-1.3.5/include -I /home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I /home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/resource.rc.obj: RC_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/resource.rc || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/resource.rc.obj: RC_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/resource.rc || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/resource.rc.obj.d
-  INCLUDES = -I /home/Walid/WemDataManager/libogg-1.3.5/include -I /home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I /home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/settings.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/settings.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/settings.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/settings.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/settings.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/treeview_extension.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/treeview_extension.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/treeview_extension.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/treeview_extension.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/treeview_extension.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
-build CMakeFiles/bnk-extract-GUI.dir/utility.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/WemDataManager/utility.c || cmake_object_order_depends_target_bnk-extract-GUI
+build CMakeFiles/bnk-extract-GUI.dir/utility.c.o: C_COMPILER__bnk-extract-GUI_unscanned_ /home/Walid/bnk-extract-GUI/utility.c || cmake_object_order_depends_target_bnk-extract-GUI
   DEP_FILE = CMakeFiles/bnk-extract-GUI.dir/utility.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   OBJECT_FILE_DIR = CMakeFiles/bnk-extract-GUI.dir
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
-  TARGET_PDB = bnk-extract-GUI.pdb
 
 
 # =============================================================================
@@ -215,17 +179,16 @@ build bnk-extract-GUI.exe: CXX_EXECUTABLE_LINKER__bnk-extract-GUI_ CMakeFiles/bn
   OBJECT_DIR = CMakeFiles/bnk-extract-GUI.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/bnk-extract-GUI.dir/
   TARGET_FILE = bnk-extract-GUI.exe
   TARGET_IMPLIB = libbnk-extract-GUI.dll.a
-  TARGET_PDB = bnk-extract-GUI.pdb
+  TARGET_PDB = bnk-extract-GUI.exe.dbg
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = /bin/sh CMakeFiles/package.dir/utility.sh a1d289cd59bbe4f9
+  COMMAND = /bin/sh CMakeFiles/package.dir/utility.sh 8a33aae23dd703f6
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -237,7 +200,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh CMakeFiles/package_source.dir/utility.sh fb5151faf95f675e
+  COMMAND = /bin/sh CMakeFiles/package_source.dir/utility.sh 0b2295016f9c8f05
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -249,7 +212,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh CMakeFiles/edit_cache.dir/utility.sh 39e8d504706d1ea7
+  COMMAND = /bin/sh CMakeFiles/edit_cache.dir/utility.sh 2fd5eb82aa4d3ab6
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -261,7 +224,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh CMakeFiles/rebuild_cache.dir/utility.sh a180ee4b646a37a2
+  COMMAND = /bin/sh CMakeFiles/rebuild_cache.dir/utility.sh 3d5fff96e889f6f0
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -279,7 +242,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = /bin/sh CMakeFiles/install.dir/utility.sh 822eb1fabbf1ce53
+  COMMAND = /bin/sh CMakeFiles/install.dir/utility.sh 2f11beb239a641a4
   DESC = Install the project...
   pool = console
   restat = 1
@@ -291,7 +254,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = /bin/sh CMakeFiles/install/local.dir/utility.sh 88315b8b80ae0f40
+  COMMAND = /bin/sh CMakeFiles/install/local.dir/utility.sh 5a850d1497b8cca9
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -303,7 +266,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = /bin/sh CMakeFiles/install/strip.dir/utility.sh 2308c3cff69297fc
+  COMMAND = /bin/sh CMakeFiles/install/strip.dir/utility.sh 4d8bb76ec9b20c1b
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -312,7 +275,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/Walid/WemDataManager/CMakeLists.txt
+# /home/Walid/bnk-extract-GUI/CMakeLists.txt
 # =============================================================================
 
 
@@ -492,23 +455,19 @@ build libogg-1.3.5/ContinuousSubmit: phony libogg-1.3.5/CMakeFiles/ContinuousSub
 
 build cmake_object_order_depends_target_ogg: phony || .
 
-build libogg-1.3.5/CMakeFiles/ogg.dir/src/bitwise.c.o: C_COMPILER__ogg_unscanned_ /home/Walid/WemDataManager/libogg-1.3.5/src/bitwise.c || cmake_object_order_depends_target_ogg
+build libogg-1.3.5/CMakeFiles/ogg.dir/src/bitwise.c.o: C_COMPILER__ogg_unscanned_ /home/Walid/bnk-extract-GUI/libogg-1.3.5/src/bitwise.c || cmake_object_order_depends_target_ogg
   DEP_FILE = libogg-1.3.5/CMakeFiles/ogg.dir/src/bitwise.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/ogg.dir
   OBJECT_FILE_DIR = libogg-1.3.5/CMakeFiles/ogg.dir/src
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/ogg.dir/ogg.pdb
-  TARGET_PDB = libogg-1.3.5/libogg.pdb
 
-build libogg-1.3.5/CMakeFiles/ogg.dir/src/framing.c.o: C_COMPILER__ogg_unscanned_ /home/Walid/WemDataManager/libogg-1.3.5/src/framing.c || cmake_object_order_depends_target_ogg
+build libogg-1.3.5/CMakeFiles/ogg.dir/src/framing.c.o: C_COMPILER__ogg_unscanned_ /home/Walid/bnk-extract-GUI/libogg-1.3.5/src/framing.c || cmake_object_order_depends_target_ogg
   DEP_FILE = libogg-1.3.5/CMakeFiles/ogg.dir/src/framing.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/ogg.dir
   OBJECT_FILE_DIR = libogg-1.3.5/CMakeFiles/ogg.dir/src
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/ogg.dir/ogg.pdb
-  TARGET_PDB = libogg-1.3.5/libogg.pdb
 
 
 # =============================================================================
@@ -522,9 +481,8 @@ build libogg-1.3.5/libogg.a: C_STATIC_LIBRARY_LINKER__ogg_ libogg-1.3.5/CMakeFil
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/ogg.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/ogg.dir/ogg.pdb
   TARGET_FILE = libogg-1.3.5/libogg.a
-  TARGET_PDB = libogg-1.3.5/libogg.pdb
+  TARGET_PDB = ogg.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_bitwise
@@ -535,15 +493,13 @@ build libogg-1.3.5/libogg.a: C_STATIC_LIBRARY_LINKER__ogg_ libogg-1.3.5/CMakeFil
 
 build cmake_object_order_depends_target_test_bitwise: phony || .
 
-build libogg-1.3.5/CMakeFiles/test_bitwise.dir/src/bitwise.c.o: C_COMPILER__test_bitwise_unscanned_ /home/Walid/WemDataManager/libogg-1.3.5/src/bitwise.c || cmake_object_order_depends_target_test_bitwise
+build libogg-1.3.5/CMakeFiles/test_bitwise.dir/src/bitwise.c.o: C_COMPILER__test_bitwise_unscanned_ /home/Walid/bnk-extract-GUI/libogg-1.3.5/src/bitwise.c || cmake_object_order_depends_target_test_bitwise
   DEFINES = -D_V_SELFTEST
   DEP_FILE = libogg-1.3.5/CMakeFiles/test_bitwise.dir/src/bitwise.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/test_bitwise.dir
   OBJECT_FILE_DIR = libogg-1.3.5/CMakeFiles/test_bitwise.dir/src
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/test_bitwise.dir/
-  TARGET_PDB = libogg-1.3.5/test_bitwise.pdb
 
 
 # =============================================================================
@@ -558,10 +514,9 @@ build libogg-1.3.5/test_bitwise.exe: C_EXECUTABLE_LINKER__test_bitwise_ libogg-1
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/test_bitwise.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/test_bitwise.dir/
   TARGET_FILE = libogg-1.3.5/test_bitwise.exe
   TARGET_IMPLIB = libogg-1.3.5/libtest_bitwise.dll.a
-  TARGET_PDB = libogg-1.3.5/test_bitwise.pdb
+  TARGET_PDB = test_bitwise.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_framing
@@ -572,15 +527,13 @@ build libogg-1.3.5/test_bitwise.exe: C_EXECUTABLE_LINKER__test_bitwise_ libogg-1
 
 build cmake_object_order_depends_target_test_framing: phony || .
 
-build libogg-1.3.5/CMakeFiles/test_framing.dir/src/framing.c.o: C_COMPILER__test_framing_unscanned_ /home/Walid/WemDataManager/libogg-1.3.5/src/framing.c || cmake_object_order_depends_target_test_framing
+build libogg-1.3.5/CMakeFiles/test_framing.dir/src/framing.c.o: C_COMPILER__test_framing_unscanned_ /home/Walid/bnk-extract-GUI/libogg-1.3.5/src/framing.c || cmake_object_order_depends_target_test_framing
   DEFINES = -D_V_SELFTEST
   DEP_FILE = libogg-1.3.5/CMakeFiles/test_framing.dir/src/framing.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/test_framing.dir
   OBJECT_FILE_DIR = libogg-1.3.5/CMakeFiles/test_framing.dir/src
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/test_framing.dir/
-  TARGET_PDB = libogg-1.3.5/test_framing.pdb
 
 
 # =============================================================================
@@ -595,17 +548,16 @@ build libogg-1.3.5/test_framing.exe: C_EXECUTABLE_LINKER__test_framing_ libogg-1
   OBJECT_DIR = libogg-1.3.5/CMakeFiles/test_framing.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libogg-1.3.5/CMakeFiles/test_framing.dir/
   TARGET_FILE = libogg-1.3.5/test_framing.exe
   TARGET_IMPLIB = libogg-1.3.5/libtest_framing.dll.a
-  TARGET_PDB = libogg-1.3.5/test_framing.pdb
+  TARGET_PDB = test_framing.exe.dbg
 
 
 #############################################
 # Utility command for package
 
 build libogg-1.3.5/CMakeFiles/package.util: CUSTOM_COMMAND libogg-1.3.5/all
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/package.dir/utility.sh a1d289cd59bbe4f9
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/package.dir/utility.sh 8a33aae23dd703f6
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -617,7 +569,7 @@ build libogg-1.3.5/package: phony libogg-1.3.5/CMakeFiles/package.util
 # Utility command for package_source
 
 build libogg-1.3.5/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/package_source.dir/utility.sh fb5151faf95f675e
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/package_source.dir/utility.sh 0b2295016f9c8f05
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -629,7 +581,7 @@ build libogg-1.3.5/package_source: phony libogg-1.3.5/CMakeFiles/package_source.
 # Utility command for edit_cache
 
 build libogg-1.3.5/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/edit_cache.dir/utility.sh 5c97ae250c2b8223
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/edit_cache.dir/utility.sh 305f2cad9ecf0205
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -641,7 +593,7 @@ build libogg-1.3.5/edit_cache: phony libogg-1.3.5/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build libogg-1.3.5/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/rebuild_cache.dir/utility.sh c1fb63da6d7c911b
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/rebuild_cache.dir/utility.sh 08af8d4cd96e6d65
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -659,7 +611,7 @@ build libogg-1.3.5/list_install_components: phony
 # Utility command for install
 
 build libogg-1.3.5/CMakeFiles/install.util: CUSTOM_COMMAND libogg-1.3.5/all
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install.dir/utility.sh 331e5506bf89cf72
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install.dir/utility.sh 9e2e9b4ec735546f
   DESC = Install the project...
   pool = console
   restat = 1
@@ -671,7 +623,7 @@ build libogg-1.3.5/install: phony libogg-1.3.5/CMakeFiles/install.util
 # Utility command for install/local
 
 build libogg-1.3.5/CMakeFiles/install/local.util: CUSTOM_COMMAND libogg-1.3.5/all
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install/local.dir/utility.sh 09e118f102562c01
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install/local.dir/utility.sh 516c0c2af1da0b5d
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -683,7 +635,7 @@ build libogg-1.3.5/install/local: phony libogg-1.3.5/CMakeFiles/install/local.ut
 # Utility command for install/strip
 
 build libogg-1.3.5/CMakeFiles/install/strip.util: CUSTOM_COMMAND libogg-1.3.5/all
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install/strip.dir/utility.sh 769b86c002188f8f
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/install/strip.dir/utility.sh a3271533e52ea578
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -695,7 +647,7 @@ build libogg-1.3.5/install/strip: phony libogg-1.3.5/CMakeFiles/install/strip.ut
 # Custom command for libogg-1.3.5/CMakeFiles/Experimental
 
 build libogg-1.3.5/CMakeFiles/Experimental | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Experimental-d315bf1.sh fcc1056a7fb1351e
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Experimental-d315bf1.sh 3ec04c87fb18a254
   pool = console
 
 
@@ -703,7 +655,7 @@ build libogg-1.3.5/CMakeFiles/Experimental | ${cmake_ninja_workdir}libogg-1.3.5/
 # Custom command for libogg-1.3.5/CMakeFiles/Nightly
 
 build libogg-1.3.5/CMakeFiles/Nightly | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Nightly-6ae29cd.sh cfb8874af894abb1
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Nightly-6ae29cd.sh 0b283c6a09170a51
   pool = console
 
 
@@ -711,7 +663,7 @@ build libogg-1.3.5/CMakeFiles/Nightly | ${cmake_ninja_workdir}libogg-1.3.5/CMake
 # Custom command for libogg-1.3.5/CMakeFiles/Continuous
 
 build libogg-1.3.5/CMakeFiles/Continuous | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Continuous-8415478.sh 22f71e6f0a790480
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/Continuous-8415478.sh e31f9dffaf3e6df4
   pool = console
 
 
@@ -719,7 +671,7 @@ build libogg-1.3.5/CMakeFiles/Continuous | ${cmake_ninja_workdir}libogg-1.3.5/CM
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyMemoryCheck
 
 build libogg-1.3.5/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyMemoryCheck-beb9f41.sh 329eb7f40a4a4915
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyMemoryCheck-beb9f41.sh 20ae92108beff628
   pool = console
 
 
@@ -727,7 +679,7 @@ build libogg-1.3.5/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}libogg-
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyStart
 
 build libogg-1.3.5/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyStart-54e73a7.sh b6739429728fc075
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyStart-54e73a7.sh 606c72bcf6e73949
   pool = console
 
 
@@ -735,7 +687,7 @@ build libogg-1.3.5/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}libogg-1.3.5/
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyUpdate
 
 build libogg-1.3.5/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyUpdate-a39d87f.sh 2aa7403cae63ca3e
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyUpdate-a39d87f.sh ca4c7969b44cc820
   pool = console
 
 
@@ -743,7 +695,7 @@ build libogg-1.3.5/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}libogg-1.3.5
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyConfigure
 
 build libogg-1.3.5/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyConfigure-2692a0d.sh bb1f5ecdf2fe115d
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyConfigure-2692a0d.sh 52138e43ee7d704e
   pool = console
 
 
@@ -751,7 +703,7 @@ build libogg-1.3.5/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}libogg-1.
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyBuild
 
 build libogg-1.3.5/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyBuild-344dc41.sh c84f220380231e50
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyBuild-344dc41.sh a3451a4ccfde08ba
   pool = console
 
 
@@ -759,7 +711,7 @@ build libogg-1.3.5/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}libogg-1.3.5/
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyTest
 
 build libogg-1.3.5/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyTest-a00b851.sh 1751499af64b4b81
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyTest-a00b851.sh a826f38e8fc8c810
   pool = console
 
 
@@ -767,7 +719,7 @@ build libogg-1.3.5/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}libogg-1.3.5/C
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyCoverage
 
 build libogg-1.3.5/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyCoverage-5089cd7.sh f0dfb57d502af560
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyCoverage-5089cd7.sh 5890807b5fadf321
   pool = console
 
 
@@ -775,7 +727,7 @@ build libogg-1.3.5/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}libogg-1.3
 # Custom command for libogg-1.3.5/CMakeFiles/NightlyMemCheck
 
 build libogg-1.3.5/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyMemCheck-9c549ff.sh 78bfca1671c014d3
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlyMemCheck-9c549ff.sh f4b5edf722ca326b
   pool = console
 
 
@@ -783,7 +735,7 @@ build libogg-1.3.5/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}libogg-1.3
 # Custom command for libogg-1.3.5/CMakeFiles/NightlySubmit
 
 build libogg-1.3.5/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlySubmit-7a0108f.sh a5980cb2662ac901
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/NightlySubmit-7a0108f.sh e592429789234ed6
   pool = console
 
 
@@ -791,7 +743,7 @@ build libogg-1.3.5/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}libogg-1.3.5
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalStart
 
 build libogg-1.3.5/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalStart-f0ecc37.sh c40facf760a730cf
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalStart-f0ecc37.sh 8e38c1402f2de2cc
   pool = console
 
 
@@ -799,7 +751,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}libogg-1
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalUpdate
 
 build libogg-1.3.5/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalUpdate-c310db6.sh 1dc8ffbd26839112
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalUpdate-c310db6.sh 4309ca06f9bb9521
   pool = console
 
 
@@ -807,7 +759,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}libogg-
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalConfigure
 
 build libogg-1.3.5/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalConfigure-f11f3d2.sh 85f79e10aa8c90b2
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalConfigure-f11f3d2.sh fb1e17726da386d2
   pool = console
 
 
@@ -815,7 +767,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}libo
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalBuild
 
 build libogg-1.3.5/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalBuild-c5bc5cc.sh 3dcd1ec38fa6a4a9
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalBuild-c5bc5cc.sh 99a2623998394c63
   pool = console
 
 
@@ -823,7 +775,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}libogg-1
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalTest
 
 build libogg-1.3.5/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalTest-10fbe77.sh c9d724f1b1626e8a
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalTest-10fbe77.sh fa6a00a5414fefce
   pool = console
 
 
@@ -831,7 +783,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}libogg-1.
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalCoverage
 
 build libogg-1.3.5/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalCoverage-3969307.sh 6330ab3eb838ed58
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalCoverage-3969307.sh 4b84e3354d12cc48
   pool = console
 
 
@@ -839,7 +791,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}libog
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalMemCheck
 
 build libogg-1.3.5/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalMemCheck-aed5dbd.sh 18ee466ae3eb324f
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalMemCheck-aed5dbd.sh 1aeecd2eb8b81560
   pool = console
 
 
@@ -847,7 +799,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}libog
 # Custom command for libogg-1.3.5/CMakeFiles/ExperimentalSubmit
 
 build libogg-1.3.5/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalSubmit-6397f8d.sh 15eb6fd24c1f952c
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ExperimentalSubmit-6397f8d.sh 2a5a4702f9734552
   pool = console
 
 
@@ -855,7 +807,7 @@ build libogg-1.3.5/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}libogg-
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousStart
 
 build libogg-1.3.5/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousStart-9750a98.sh 48f849abc28a18d2
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousStart-9750a98.sh 4533b004ee9e41d5
   pool = console
 
 
@@ -863,7 +815,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}libogg-1.3
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousUpdate
 
 build libogg-1.3.5/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousUpdate-ab989e9.sh 1514330a4f4f060a
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousUpdate-ab989e9.sh 5f1c497d732e0f09
   pool = console
 
 
@@ -871,7 +823,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}libogg-1.
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousConfigure
 
 build libogg-1.3.5/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousConfigure-b0ff38c.sh 23ef550c54ac9258
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousConfigure-b0ff38c.sh aef18281e21267c0
   pool = console
 
 
@@ -879,7 +831,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}libogg
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousBuild
 
 build libogg-1.3.5/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousBuild-bc42d69.sh 298d96719427f929
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousBuild-bc42d69.sh 718578e1fe42d25e
   pool = console
 
 
@@ -887,7 +839,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}libogg-1.3
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousTest
 
 build libogg-1.3.5/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousTest-f516b22.sh 5fa656020ace2620
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousTest-f516b22.sh 90754104a6725553
   pool = console
 
 
@@ -895,7 +847,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}libogg-1.3.
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousCoverage
 
 build libogg-1.3.5/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousCoverage-9c44698.sh 5428243a9a55f971
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousCoverage-9c44698.sh 14652adeac7b8f62
   pool = console
 
 
@@ -903,7 +855,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}libogg-
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousMemCheck
 
 build libogg-1.3.5/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousMemCheck-887c193.sh 009d89fee21e51b9
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousMemCheck-887c193.sh 77555b63be198c93
   pool = console
 
 
@@ -911,12 +863,12 @@ build libogg-1.3.5/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}libogg-
 # Custom command for libogg-1.3.5/CMakeFiles/ContinuousSubmit
 
 build libogg-1.3.5/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}libogg-1.3.5/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousSubmit-3131579.sh cd7b15b8ca503d27
+  COMMAND = /bin/sh libogg-1.3.5/CMakeFiles/ContinuousSubmit-3131579.sh 99d8eaf66b6dcae1
   pool = console
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/Walid/WemDataManager/CMakeLists.txt
+# /home/Walid/bnk-extract-GUI/CMakeLists.txt
 # =============================================================================
 
 
@@ -924,7 +876,7 @@ build libogg-1.3.5/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}libogg-1.
 # Utility command for package
 
 build libvorbis-1.3.7/CMakeFiles/package.util: CUSTOM_COMMAND libvorbis-1.3.7/all
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/package.dir/utility.sh a1d289cd59bbe4f9
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/package.dir/utility.sh 8a33aae23dd703f6
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -936,7 +888,7 @@ build libvorbis-1.3.7/package: phony libvorbis-1.3.7/CMakeFiles/package.util
 # Utility command for package_source
 
 build libvorbis-1.3.7/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/package_source.dir/utility.sh fb5151faf95f675e
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/package_source.dir/utility.sh 0b2295016f9c8f05
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -948,7 +900,7 @@ build libvorbis-1.3.7/package_source: phony libvorbis-1.3.7/CMakeFiles/package_s
 # Utility command for edit_cache
 
 build libvorbis-1.3.7/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/edit_cache.dir/utility.sh 33b1f7db49619ff9
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/edit_cache.dir/utility.sh d005a2c09601a283
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -960,7 +912,7 @@ build libvorbis-1.3.7/edit_cache: phony libvorbis-1.3.7/CMakeFiles/edit_cache.ut
 # Utility command for rebuild_cache
 
 build libvorbis-1.3.7/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/rebuild_cache.dir/utility.sh dcccef82cbe0af89
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/rebuild_cache.dir/utility.sh b03e80f97295eefd
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -978,7 +930,7 @@ build libvorbis-1.3.7/list_install_components: phony
 # Utility command for install
 
 build libvorbis-1.3.7/CMakeFiles/install.util: CUSTOM_COMMAND libvorbis-1.3.7/all
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install.dir/utility.sh bd57b3831f815dae
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install.dir/utility.sh 36532b337f647c6c
   DESC = Install the project...
   pool = console
   restat = 1
@@ -990,7 +942,7 @@ build libvorbis-1.3.7/install: phony libvorbis-1.3.7/CMakeFiles/install.util
 # Utility command for install/local
 
 build libvorbis-1.3.7/CMakeFiles/install/local.util: CUSTOM_COMMAND libvorbis-1.3.7/all
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install/local.dir/utility.sh 2ab9af8fd9adbaef
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install/local.dir/utility.sh 269b7baace1aba63
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1002,7 +954,7 @@ build libvorbis-1.3.7/install/local: phony libvorbis-1.3.7/CMakeFiles/install/lo
 # Utility command for install/strip
 
 build libvorbis-1.3.7/CMakeFiles/install/strip.util: CUSTOM_COMMAND libvorbis-1.3.7/all
-  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install/strip.dir/utility.sh a4b4ceaa2632b5be
+  COMMAND = /bin/sh libvorbis-1.3.7/CMakeFiles/install/strip.dir/utility.sh 221d2329ae6e0e5e
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1011,7 +963,7 @@ build libvorbis-1.3.7/install/strip: phony libvorbis-1.3.7/CMakeFiles/install/st
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/Walid/WemDataManager/libvorbis-1.3.7/CMakeLists.txt
+# /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -1023,185 +975,145 @@ build libvorbis-1.3.7/install/strip: phony libvorbis-1.3.7/CMakeFiles/install/st
 
 build cmake_object_order_depends_target_vorbis: phony || cmake_object_order_depends_target_ogg
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mdct.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/mdct.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mdct.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/mdct.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mdct.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/smallft.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/smallft.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/smallft.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/smallft.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/smallft.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/block.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/block.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/block.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/block.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/block.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/envelope.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/envelope.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/envelope.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/envelope.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/envelope.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/window.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/window.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/window.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/window.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/window.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lsp.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/lsp.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lsp.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/lsp.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lsp.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lpc.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/lpc.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lpc.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/lpc.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lpc.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/analysis.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/analysis.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/analysis.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/analysis.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/analysis.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/synthesis.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/synthesis.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/synthesis.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/synthesis.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/synthesis.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/psy.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/psy.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/psy.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/psy.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/psy.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/info.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/info.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/info.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/info.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/info.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor1.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/floor1.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor1.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/floor1.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor1.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/floor0.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/floor0.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/floor0.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/res0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/res0.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/res0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/res0.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/res0.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mapping0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/mapping0.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mapping0.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/mapping0.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/mapping0.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/registry.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/registry.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/registry.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/registry.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/registry.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/codebook.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/codebook.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/codebook.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/codebook.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/codebook.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/sharedbook.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/sharedbook.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/sharedbook.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/sharedbook.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/sharedbook.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lookup.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/lookup.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lookup.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/lookup.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/lookup.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/bitrate.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/bitrate.c || cmake_object_order_depends_target_vorbis
+build libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/bitrate.c.o: C_COMPILER__vorbis_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/bitrate.c || cmake_object_order_depends_target_vorbis
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/bitrate.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
 
 
 # =============================================================================
@@ -1215,9 +1127,8 @@ build libvorbis-1.3.7/lib/libvorbis.a: C_STATIC_LIBRARY_LINKER__vorbis_ libvorbi
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbis.dir/vorbis.pdb
   TARGET_FILE = libvorbis-1.3.7/lib/libvorbis.a
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbis.pdb
+  TARGET_PDB = vorbis.a.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target vorbisenc
@@ -1228,14 +1139,12 @@ build libvorbis-1.3.7/lib/libvorbis.a: C_STATIC_LIBRARY_LINKER__vorbis_ libvorbi
 
 build cmake_object_order_depends_target_vorbisenc: phony || cmake_object_order_depends_target_ogg cmake_object_order_depends_target_vorbis
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o: C_COMPILER__vorbisenc_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/vorbisenc.c || cmake_object_order_depends_target_vorbisenc
+build libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o: C_COMPILER__vorbisenc_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/vorbisenc.c || cmake_object_order_depends_target_vorbisenc
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libvorbis-1.3.7/lib -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir/vorbisenc.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbisenc.pdb
 
 
 # =============================================================================
@@ -1249,9 +1158,8 @@ build libvorbis-1.3.7/lib/libvorbisenc.a: C_STATIC_LIBRARY_LINKER__vorbisenc_ li
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbisenc.dir/vorbisenc.pdb
   TARGET_FILE = libvorbis-1.3.7/lib/libvorbisenc.a
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbisenc.pdb
+  TARGET_PDB = vorbisenc.a.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target vorbisfile
@@ -1262,14 +1170,12 @@ build libvorbis-1.3.7/lib/libvorbisenc.a: C_STATIC_LIBRARY_LINKER__vorbisenc_ li
 
 build cmake_object_order_depends_target_vorbisfile: phony || cmake_object_order_depends_target_ogg cmake_object_order_depends_target_vorbis
 
-build libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o: C_COMPILER__vorbisfile_unscanned_ /home/Walid/WemDataManager/libvorbis-1.3.7/lib/vorbisfile.c || cmake_object_order_depends_target_vorbisfile
+build libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o: C_COMPILER__vorbisfile_unscanned_ /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/vorbisfile.c || cmake_object_order_depends_target_vorbisfile
   DEP_FILE = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.o.d
   FLAGS = -std=gnu11
-  INCLUDES = -I/home/Walid/WemDataManager/libvorbis-1.3.7/include -I/home/Walid/WemDataManager/libogg-1.3.5/include
+  INCLUDES = -I/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/include -I/home/Walid/bnk-extract-GUI/libogg-1.3.5/include
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir
   OBJECT_FILE_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir/vorbisfile.pdb
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbisfile.pdb
 
 
 # =============================================================================
@@ -1283,16 +1189,15 @@ build libvorbis-1.3.7/lib/libvorbisfile.a: C_STATIC_LIBRARY_LINKER__vorbisfile_ 
   OBJECT_DIR = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libvorbis-1.3.7/lib/CMakeFiles/vorbisfile.dir/vorbisfile.pdb
   TARGET_FILE = libvorbis-1.3.7/lib/libvorbisfile.a
-  TARGET_PDB = libvorbis-1.3.7/lib/libvorbisfile.pdb
+  TARGET_PDB = vorbisfile.a.dbg
 
 
 #############################################
 # Utility command for package
 
 build libvorbis-1.3.7/lib/CMakeFiles/package.util: CUSTOM_COMMAND libvorbis-1.3.7/lib/all
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/package.dir/utility.sh a1d289cd59bbe4f9
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/package.dir/utility.sh 8a33aae23dd703f6
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1304,7 +1209,7 @@ build libvorbis-1.3.7/lib/package: phony libvorbis-1.3.7/lib/CMakeFiles/package.
 # Utility command for package_source
 
 build libvorbis-1.3.7/lib/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/package_source.dir/utility.sh fb5151faf95f675e
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/package_source.dir/utility.sh 0b2295016f9c8f05
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1316,7 +1221,7 @@ build libvorbis-1.3.7/lib/package_source: phony libvorbis-1.3.7/lib/CMakeFiles/p
 # Utility command for edit_cache
 
 build libvorbis-1.3.7/lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/edit_cache.dir/utility.sh 884949f95881e7a6
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/edit_cache.dir/utility.sh db5ca7343cb8b98e
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -1328,7 +1233,7 @@ build libvorbis-1.3.7/lib/edit_cache: phony libvorbis-1.3.7/lib/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build libvorbis-1.3.7/lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/rebuild_cache.dir/utility.sh be87706b306b2a69
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/rebuild_cache.dir/utility.sh 79534a4f89a704ba
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1346,7 +1251,7 @@ build libvorbis-1.3.7/lib/list_install_components: phony
 # Utility command for install
 
 build libvorbis-1.3.7/lib/CMakeFiles/install.util: CUSTOM_COMMAND libvorbis-1.3.7/lib/all
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install.dir/utility.sh 9c0ca8b89df5f050
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install.dir/utility.sh c88895571cd4c185
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1358,7 +1263,7 @@ build libvorbis-1.3.7/lib/install: phony libvorbis-1.3.7/lib/CMakeFiles/install.
 # Utility command for install/local
 
 build libvorbis-1.3.7/lib/CMakeFiles/install/local.util: CUSTOM_COMMAND libvorbis-1.3.7/lib/all
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install/local.dir/utility.sh 8d72c95bfb498928
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install/local.dir/utility.sh 35f140f5760f082d
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1370,7 +1275,7 @@ build libvorbis-1.3.7/lib/install/local: phony libvorbis-1.3.7/lib/CMakeFiles/in
 # Utility command for install/strip
 
 build libvorbis-1.3.7/lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND libvorbis-1.3.7/lib/all
-  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install/strip.dir/utility.sh cfe29c16a1676d48
+  COMMAND = /bin/sh libvorbis-1.3.7/lib/CMakeFiles/install/strip.dir/utility.sh ae91b13a0d02a3b2
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1468,28 +1373,28 @@ build vorbisfile: phony libvorbis-1.3.7/lib/libvorbisfile.a
 # =============================================================================
 
 #############################################
-# Folder: /home/Walid/WemDataManager
+# Folder: /home/Walid/bnk-extract-GUI
 
 build all: phony bnk-extract-GUI.exe libogg-1.3.5/all libvorbis-1.3.7/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/Walid/WemDataManager/libogg-1.3.5
+# Folder: /home/Walid/bnk-extract-GUI/libogg-1.3.5
 
 build libogg-1.3.5/all: phony libogg-1.3.5/libogg.a libogg-1.3.5/test_bitwise.exe libogg-1.3.5/test_framing.exe
 
 # =============================================================================
 
 #############################################
-# Folder: /home/Walid/WemDataManager/libvorbis-1.3.7
+# Folder: /home/Walid/bnk-extract-GUI/libvorbis-1.3.7
 
 build libvorbis-1.3.7/all: phony libvorbis-1.3.7/lib/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/Walid/WemDataManager/libvorbis-1.3.7/lib
+# Folder: /home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib
 
 build libvorbis-1.3.7/lib/all: phony libvorbis-1.3.7/lib/libvorbis.a libvorbis-1.3.7/lib/libvorbisenc.a libvorbis-1.3.7/lib/libvorbisfile.a
 
@@ -1500,14 +1405,14 @@ build libvorbis-1.3.7/lib/all: phony libvorbis-1.3.7/lib/libvorbis.a libvorbis-1
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineRCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeRCCompiler.cmake.in /usr/share/cmake/Modules/CMakeRCInformation.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CMakeTestRCCompiler.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckIncludeFiles.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/CheckTypeSize.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Initialize.cmake /usr/share/cmake/Modules/Platform/CYGWIN-windres.cmake /usr/share/cmake/Modules/Platform/CYGWIN.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Initialize.cmake /usr/share/cmake/Modules/Platform/MSYS-windres.cmake /usr/share/cmake/Modules/Platform/MSYS.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.31.2/CMakeCCompiler.cmake CMakeFiles/3.31.2/CMakeCXXCompiler.cmake CMakeFiles/3.31.2/CMakeRCCompiler.cmake CMakeFiles/3.31.2/CMakeSystem.cmake CMakeLists.txt libogg-1.3.5/CMakeLists.txt libogg-1.3.5/cmake/CheckSizes.cmake libogg-1.3.5/cmake/OggConfig.cmake.in libogg-1.3.5/include/ogg/config_types.h.in libogg-1.3.5/ogg.pc.in libvorbis-1.3.7/CMakeLists.txt libvorbis-1.3.7/cmake/FindOgg.cmake libvorbis-1.3.7/lib/CMakeLists.txt libvorbis-1.3.7/vorbis.pc.in libvorbis-1.3.7/vorbisenc.pc.in libvorbis-1.3.7/vorbisfile.pc.in
+build build.ninja: RERUN_CMAKE | /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeRCInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckIncludeFiles.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/CheckTypeSize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Initialize.cmake /usr/share/cmake/Modules/Platform/CYGWIN-windres.cmake /usr/share/cmake/Modules/Platform/CYGWIN.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Initialize.cmake /usr/share/cmake/Modules/Platform/MSYS-windres.cmake /usr/share/cmake/Modules/Platform/MSYS.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.31.2/CMakeCCompiler.cmake CMakeFiles/3.31.2/CMakeCXXCompiler.cmake CMakeFiles/3.31.2/CMakeRCCompiler.cmake CMakeFiles/3.31.2/CMakeSystem.cmake CMakeLists.txt libogg-1.3.5/CMakeLists.txt libogg-1.3.5/cmake/CheckSizes.cmake libogg-1.3.5/include/ogg/config_types.h.in libogg-1.3.5/ogg.pc.in libvorbis-1.3.7/CMakeLists.txt libvorbis-1.3.7/cmake/FindOgg.cmake libvorbis-1.3.7/lib/CMakeLists.txt libvorbis-1.3.7/vorbis.pc.in libvorbis-1.3.7/vorbisenc.pc.in libvorbis-1.3.7/vorbisfile.pc.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineRCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeRCCompiler.cmake.in /usr/share/cmake/Modules/CMakeRCInformation.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CMakeTestRCCompiler.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckIncludeFiles.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/CheckTypeSize.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Initialize.cmake /usr/share/cmake/Modules/Platform/CYGWIN-windres.cmake /usr/share/cmake/Modules/Platform/CYGWIN.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Initialize.cmake /usr/share/cmake/Modules/Platform/MSYS-windres.cmake /usr/share/cmake/Modules/Platform/MSYS.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.31.2/CMakeCCompiler.cmake CMakeFiles/3.31.2/CMakeCXXCompiler.cmake CMakeFiles/3.31.2/CMakeRCCompiler.cmake CMakeFiles/3.31.2/CMakeSystem.cmake CMakeLists.txt libogg-1.3.5/CMakeLists.txt libogg-1.3.5/cmake/CheckSizes.cmake libogg-1.3.5/cmake/OggConfig.cmake.in libogg-1.3.5/include/ogg/config_types.h.in libogg-1.3.5/ogg.pc.in libvorbis-1.3.7/CMakeLists.txt libvorbis-1.3.7/cmake/FindOgg.cmake libvorbis-1.3.7/lib/CMakeLists.txt libvorbis-1.3.7/vorbis.pc.in libvorbis-1.3.7/vorbisenc.pc.in libvorbis-1.3.7/vorbisfile.pc.in: phony
+build /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeRCInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake/Modules/CheckIncludeFiles.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/CheckTypeSize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-C.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/CYGWIN-Initialize.cmake /usr/share/cmake/Modules/Platform/CYGWIN-windres.cmake /usr/share/cmake/Modules/Platform/CYGWIN.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/CYGWIN-GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linker/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-C.cmake /usr/share/cmake/Modules/Platform/MSYS-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/MSYS-Initialize.cmake /usr/share/cmake/Modules/Platform/MSYS-windres.cmake /usr/share/cmake/Modules/Platform/MSYS.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.31.2/CMakeCCompiler.cmake CMakeFiles/3.31.2/CMakeCXXCompiler.cmake CMakeFiles/3.31.2/CMakeRCCompiler.cmake CMakeFiles/3.31.2/CMakeSystem.cmake CMakeLists.txt libogg-1.3.5/CMakeLists.txt libogg-1.3.5/cmake/CheckSizes.cmake libogg-1.3.5/include/ogg/config_types.h.in libogg-1.3.5/ogg.pc.in libvorbis-1.3.7/CMakeLists.txt libvorbis-1.3.7/cmake/FindOgg.cmake libvorbis-1.3.7/lib/CMakeLists.txt libvorbis-1.3.7/vorbis.pc.in libvorbis-1.3.7/vorbisenc.pc.in libvorbis-1.3.7/vorbisfile.pc.in: phony
 
 
 #############################################

@@ -1,4 +1,4 @@
-# Install script for directory: /home/Walid/WemDataManager/libvorbis-1.3.7
+# Install script for directory: /home/Walid/bnk-extract-GUI/libvorbis-1.3.7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,21 +39,21 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/vorbis.pc"
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/vorbisenc.pc"
-    "/home/Walid/WemDataManager/libvorbis-1.3.7/vorbisfile.pc"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/vorbis.pc"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/vorbisenc.pc"
+    "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/vorbisfile.pc"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/Walid/WemDataManager/libvorbis-1.3.7/lib/cmake_install.cmake")
+  include("/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/lib/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/Walid/WemDataManager/libvorbis-1.3.7/install_local_manifest.txt"
+  file(WRITE "/home/Walid/bnk-extract-GUI/libvorbis-1.3.7/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

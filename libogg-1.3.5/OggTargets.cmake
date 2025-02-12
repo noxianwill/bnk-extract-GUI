@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(Ogg::ogg STATIC IMPORTED)
 
 set_target_properties(Ogg::ogg PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/Walid/WemDataManager/libogg-1.3.5/include;/home/Walid/WemDataManager/libogg-1.3.5/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/Walid/bnk-extract-GUI/libogg-1.3.5/include;/home/Walid/bnk-extract-GUI/libogg-1.3.5/include"
 )
 
 # Import target "Ogg::ogg" for configuration ""
 set_property(TARGET Ogg::ogg APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(Ogg::ogg PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "/home/Walid/WemDataManager/libogg-1.3.5/libogg.a"
+  IMPORTED_LOCATION_NOCONFIG "/home/Walid/bnk-extract-GUI/libogg-1.3.5/libogg.a"
   )
 
 # This file does not depend on other imported targets which have

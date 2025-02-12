@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/Walid/WemDataManager/libogg-1.3.5
-BuildDirectory: /home/Walid/WemDataManager/libogg-1.3.5
+SourceDirectory: /home/Walid/bnk-extract-GUI/libogg-1.3.5
+BuildDirectory: /home/Walid/bnk-extract-GUI/libogg-1.3.5
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake.exe" "/home/Walid/WemDataManager/libogg-1.3.5"
+ConfigureCommand: "/usr/bin/cmake.exe" "/home/Walid/bnk-extract-GUI/libogg-1.3.5"
 MakeCommand: /usr/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
