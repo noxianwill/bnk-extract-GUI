@@ -550,17 +550,25 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             }
 
             // Write BKHD section
-            fwrite("BKHD", 1, 4, bnk_file);  // BKHD magic
+            if(fwrite("BKHD", 1, 4, bnk_file) != 4) {  // BKHD magic
+                MessageBox(window, "Failed to write BKHD magic", "Error", MB_ICONERROR);
+                fclose(bnk_file);
+                return;
+            }
             uint32_t bkhd_length = 0x14;
             fwrite(&bkhd_length, 4, 1, bnk_file);  // Section length
             uint32_t version = 0x58;  // Version for events.bnk
             fwrite(&version, 4, 1, bnk_file);
-            fwrite("\x00\x00\x00\x00", 4, 1, bnk_file);  // Bank ID
+            fwrite("\x00\x00\x00\x00", 4, 1, bnk_file);  // Bank ID 
             fwrite("\x3e\x5d\x70\x17", 4, 1, bnk_file);  // Standard header bytes
             fwrite("\x00\x00\x00\x00\xfa\x00\x00\x00\x00\x00\x00\x00", 12, 1, bnk_file);
 
             // Write HIRC section header
-            fwrite("HIRC", 1, 4, bnk_file);
+            if(fwrite("HIRC", 1, 4, bnk_file) != 4) {
+                MessageBox(window, "Failed to write HIRC magic", "Error", MB_ICONERROR);
+                fclose(bnk_file);
+                return;
+            }
             uint32_t total_size = 4;  // Start with 4 bytes for event_count
             uint32_t event_count = 0;
 
