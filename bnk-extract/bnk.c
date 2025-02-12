@@ -24,20 +24,41 @@ struct BNKFile {
 
 uint32_t skip_to_section(FILE* bnk_file, char name[4], bool from_beginning)
 {
-    if (from_beginning)
+    if (from_beginning) {
         fseek(bnk_file, 0, SEEK_SET);
+    }
 
     uint8_t header[4];
     uint32_t section_length = 0;
+    long file_size;
+    
+    // Get file size
+    fseek(bnk_file, 0, SEEK_END);
+    file_size = ftell(bnk_file);
+    if (from_beginning) {
+        fseek(bnk_file, 0, SEEK_SET);
+    } else {
+        fseek(bnk_file, -file_size, SEEK_CUR);
+    }
 
-    do {
-        fseek(bnk_file, section_length, SEEK_CUR);
-        if (fread(header, 1, 4, bnk_file) != 4)
+    while (ftell(bnk_file) < file_size) {
+        size_t read = fread(header, 1, 4, bnk_file);
+        if (read != 4) return 0;
+        
+        if (fread(&section_length, 4, 1, bnk_file) != 1) return 0;
+        
+        if (memcmp(header, name, 4) == 0) {
+            return section_length;
+        }
+        
+        if (section_length > (uint32_t)(file_size - ftell(bnk_file))) {
             return 0;
-        assert(fread(&section_length, 4, 1, bnk_file) == 1);
-    } while (memcmp(header, name, 4) != 0);
+        }
+        
+        fseek(bnk_file, section_length, SEEK_CUR);
+    }
 
-    return section_length;
+    return 0;
 }
 
 static int parse_bnk_file_entries(FILE* bnk_file, struct BNKFile* bnkfile)

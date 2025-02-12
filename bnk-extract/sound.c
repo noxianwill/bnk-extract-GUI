@@ -499,10 +499,12 @@ int parse_event_bnk_file(char* path, struct BNKSections* sections)
         eprintf("Error: Failed to open \"%s\".\n", path);
         return -1;
     }
+
+    // Validate BKHD section
     char magic[4];
-    assert(fread(magic, 1, 4, bnk_file) == 4);
-    if (memcmp(magic, "BKHD", 4) != 0) {
-        eprintf("Error: Not a bnk file!\n");
+    size_t read = fread(magic, 1, 4, bnk_file);
+    if (read != 4 || memcmp(magic, "BKHD", 4) != 0) {
+        eprintf("Error: Invalid BNK file header!\n");
         fclose(bnk_file);
         return -1;
     }
