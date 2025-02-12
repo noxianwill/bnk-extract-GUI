@@ -15,6 +15,8 @@ typedef struct {
 
 void SaveBnkOrWpk(HWND window, HTREEITEM rootItem);
 
+void SaveEventsBnk(HWND window, HTREEITEM eventItem);
+
 void ReplaceWemData(HWND window);
 
 // Add new function declaration

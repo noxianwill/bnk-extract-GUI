@@ -21,7 +21,7 @@ static HINSTANCE me;
 static HWND mainWindow;
 static HWND BinTextBox, AudioTextBox, EventsTextBox;
 static HWND BinFileSelectButton, AudioFileSelectButton, EventsFileSelectButton, GoButton, XButton, ExtractButton,
-            SaveButton, ReplaceButton, PlayAudioButton, StopAudioButton, DeleteSystem32Button, AddWemButton;
+            SaveButton, ReplaceButton, PlayAudioButton, StopAudioButton, DeleteSystem32Button, AddWemButton, SaveEventsButton;
 static HWND DeleteSystem32ProgressBar;
 static HACCEL KeyCombinations;
 static uint8_t* oldPcmData;
@@ -285,6 +285,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     Button_Enable(ReplaceButton, false);
                     Button_Enable(PlayAudioButton, false);
                     Button_Enable(AddWemButton, false); // Disable AddWemButton as well
+                    Button_Enable(SaveEventsButton, false); //Disable SaveEventsButton as well
                     TreeView_DeleteAllItems(treeview);
                 } else if ((HWND) lParam == ExtractButton) {
                     DWORD selectedItemCount = TreeView_GetSelectedCount(treeview);
@@ -383,6 +384,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     free(fileNameBuffer);
                     return 0;
 
+                } else if ((HWND) lParam == SaveEventsButton) {
+                    if (TreeView_GetSelectedCount(treeview) > 1) {
+                        MessageBox(hwnd, "Sorry, won't operate when multiple items are selected", "ah multiselect :/", MB_ICONINFORMATION);
+                    } else {
+                        HTREEITEM currentSelection = TreeView_GetSelection(treeview);
+                        SaveEventsBnk(hwnd, currentSelection);
+                    }
                 } else {
                     char fileNameBuffer[256] = {0};
                     OPENFILENAME fileNameInfo = {
@@ -495,6 +503,8 @@ int WINAPI WinMain(HINSTANCE hInstance, __attribute__((unused)) HINSTANCE hPrevI
     StopAudioButton = CreateWindowEx(0, "BUTTON", "Stop all playing sounds", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON, 600, 280, 130, 24, mainWindow, NULL, hInstance, NULL);
     DeleteSystem32Button = CreateWindowEx(0, "BUTTON", "Delete system32", WS_CHILD | WS_VISIBLE | WS_TABSTOP | BS_PUSHBUTTON, 600, 400, 130, 24, mainWindow, NULL, hInstance, NULL);
     AddWemButton = CreateWindowEx(0, "BUTTON", "Add wem file", WS_CHILD | WS_VISIBLE | WS_DISABLED | BS_PUSHBUTTON, 600, 310, 130, 24, mainWindow, NULL, hInstance, NULL);
+    SaveEventsButton = CreateWindowEx(0, "BUTTON", "Save Events.bnk", WS_CHILD | WS_VISIBLE | WS_DISABLED | BS_PUSHBUTTON, 600, 170, 130, 24, mainWindow, NULL, hInstance, NULL); // Added SaveEventsButton
+
     // disable the ugly selection outline of the text when a button gets pushed
     SendMessage(mainWindow, WM_CHANGEUISTATE, MAKELONG(UIS_SET, UISF_HIDEFOCUS), 0);
 
@@ -519,4 +529,9 @@ int WINAPI WinMain(HINSTANCE hInstance, __attribute__((unused)) HINSTANCE hPrevI
     }
 
     return Msg.wParam;
+}
+
+void SaveEventsBnk(__attribute__((unused)) HWND hwnd, __attribute__((unused)) HTREEITEM currentSelection) {
+    // Dummy implementation - Replace with actual saving logic
+    MessageBox(hwnd, L"SaveEventsBnk function called.  Implementation needed.", L"Placeholder", MB_OK);
 }
