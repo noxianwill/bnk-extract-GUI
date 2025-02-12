@@ -526,8 +526,8 @@ char* GetPathFromTextBox(HWND textBox)
     return path;
 }
 
-void SaveEventsBnk(HWND window, HTREEITEM eventItem) {
-        HWND treeview = GetDlgItem(window, IDC_TREE1);
+void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
+        // Using global treeview variable instead of GetDlgItem
         HTREEITEM rootItem = TreeView_GetRoot(treeview);
         HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
         FILE* bnk_file = NULL;
