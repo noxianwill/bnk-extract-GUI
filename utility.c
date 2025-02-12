@@ -527,126 +527,128 @@ char* GetPathFromTextBox(HWND textBox)
 }
 
 void SaveEventsBnk(HWND window, HTREEITEM eventItem) {
-    char fileNameBuffer[256] = "events.bnk";
-    OPENFILENAME fileNameInfo = {
-        .lStructSize = sizeof(OPENFILENAME),
-        .hwndOwner = window,
-        .lpstrFile = fileNameBuffer,
-        .nMaxFile = 255,
-        .lpstrFilter = "Events BNK file\0*.bnk\0All files\0*.*\0\0",
-        .lpstrDefExt = "bnk",
-        .Flags = OFN_OVERWRITEPROMPT
-    };
-
-    if (GetSaveFileName(&fileNameInfo)) {
-        FILE* bnk_file = fopen(fileNameInfo.lpstrFile, "wb");
-        if (!bnk_file) {
-            MessageBox(window, "Failed to open file for writing", "Error", MB_ICONERROR);
-            return;
-        }
-
-        // Write BKHD section
-        fwrite("BKHD", 1, 4, bnk_file);
-        uint32_t bkhd_length = 0x14;
-        fwrite(&bkhd_length, 4, 1, bnk_file);
-        uint32_t version = 0x58;  // Version for events.bnk
-        fwrite(&version, 4, 1, bnk_file);
-        fwrite("\x00\x00\x00\x00", 4, 1, bnk_file);  // Bank ID
-        fwrite("\x3e\x5d\x70\x17", 4, 1, bnk_file);  // Standard header bytes
-        fwrite("\x00\x00\x00\x00\xfa\x00\x00\x00\x00\x00\x00\x00", 12, 1, bnk_file);
-
-        // Write HIRC section
-        fwrite("HIRC", 1, 4, bnk_file);
-        
-        // Calculate total size for events and their WEM mappings
+        HWND treeview = GetDlgItem(window, IDC_TREE1);
         HTREEITEM rootItem = TreeView_GetRoot(treeview);
-        uint32_t total_size = 0;
-        uint32_t event_count = 0;
-        
-        HTREEITEM currentItem = TreeView_GetChild(rootItem);
-        while (currentItem) {
-            TVITEM tvItem = {
-                .mask = TVIF_PARAM | TVIF_TEXT,
-                .hItem = currentItem,
-                .pszText = malloc(256),
-                .cchTextMax = 255
-            };
-            TreeView_GetItem(treeview, &tvItem);
-            
-            if (!tvItem.lParam) {  // This is an event item
-                uint32_t wem_count = 0;
-                HTREEITEM childItem = TreeView_GetChild(currentItem);
-                while (childItem) {
-                    wem_count++;
-                    childItem = TreeView_GetNextSibling(treeview, childItem);
-                }
-                if (wem_count > 0) {
-                    total_size += 5 + 4 + wem_count * 4;  // type + event_id + wem_count + wem_ids
-                    event_count++;
-                }
+        HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
+        FILE* bnk_file = NULL;
+        char fileNameBuffer[256] = "events.bnk";
+        OPENFILENAME fileNameInfo = {
+            .lStructSize = sizeof(OPENFILENAME),
+            .hwndOwner = window,
+            .lpstrFile = fileNameBuffer,
+            .nMaxFile = 255,
+            .lpstrFilter = "Events BNK file\0*.bnk\0All files\0*.*\0\0",
+            .lpstrDefExt = "bnk",
+            .Flags = OFN_OVERWRITEPROMPT
+        };
+
+        if (GetSaveFileName(&fileNameInfo)) {
+            bnk_file = fopen(fileNameInfo.lpstrFile, "wb");
+            if (!bnk_file) {
+                MessageBox(window, "Failed to open file for writing", "Error", MB_ICONERROR);
+                return;
             }
-            free(tvItem.pszText);
-            currentItem = TreeView_GetNextSibling(treeview, currentItem);
-        }
 
-        // Write total section size and number of objects
-        fwrite(&total_size, 4, 1, bnk_file);
-        fwrite(&event_count, 4, 1, bnk_file);
+            // Write BKHD section
+            fwrite("BKHD", 1, 4, bnk_file);
+            uint32_t bkhd_length = 0x14;
+            fwrite(&bkhd_length, 4, 1, bnk_file);
+            uint32_t version = 0x58;  // Version for events.bnk
+            fwrite(&version, 4, 1, bnk_file);
+            fwrite("\x00\x00\x00\x00", 4, 1, bnk_file);  // Bank ID
+            fwrite("\x3e\x5d\x70\x17", 4, 1, bnk_file);  // Standard header bytes
+            fwrite("\x00\x00\x00\x00\xfa\x00\x00\x00\x00\x00\x00\x00", 12, 1, bnk_file);
 
-        // Write event data
-        currentItem = TreeView_GetChild(rootItem);
-        while (currentItem) {
-            TVITEM tvItem = {
-                .mask = TVIF_PARAM | TVIF_TEXT,
-                .hItem = currentItem,
-                .pszText = malloc(256),
-                .cchTextMax = 255
-            };
-            TreeView_GetItem(treeview, &tvItem);
+            // Write HIRC section
+            fwrite("HIRC", 1, 4, bnk_file);
 
-            if (!tvItem.lParam) {  // This is an event item
-                HTREEITEM childItem = TreeView_GetChild(currentItem);
-                uint32_t wem_count = 0;
-                uint32_t* wem_ids = malloc(256 * sizeof(uint32_t));
-                
-                while (childItem) {
-                    TVITEM childTvItem = {
-                        .mask = TVIF_PARAM,
-                        .hItem = childItem
-                    };
-                    TreeView_GetItem(treeview, &childTvItem);
-                    if (childTvItem.lParam) {
-                        AudioData* wemData = (AudioData*)childTvItem.lParam;
-                        wem_ids[wem_count++] = wemData->id;
+            // Calculate total size for events and their WEM mappings
+            uint32_t total_size = 0;
+            uint32_t event_count = 0;
+
+            while (currentItem) {
+                TVITEM tvItem = {
+                    .mask = TVIF_PARAM | TVIF_TEXT,
+                    .hItem = currentItem,
+                    .pszText = malloc(256),
+                    .cchTextMax = 255
+                };
+                TreeView_GetItem(treeview, &tvItem);
+
+                if (!tvItem.lParam) {  // This is an event item
+                    uint32_t wem_count = 0;
+                    HTREEITEM childItem = TreeView_GetChild(treeview, currentItem);
+                    while (childItem) {
+                        wem_count++;
+                        childItem = TreeView_GetNextSibling(treeview, childItem);
                     }
-                    childItem = TreeView_GetNextSibling(treeview, childItem);
-                }
-
-                if (wem_count > 0) {
-                    // Write event type (4 for event)
-                    uint8_t type = 4;
-                    fwrite(&type, 1, 1, bnk_file);
-                    
-                    // Write event ID
-                    uint32_t event_id = strtoul(tvItem.pszText, NULL, 10);
-                    fwrite(&event_id, 4, 1, bnk_file);
-                    
-                    // Write number of WEM files
-                    uint8_t wem_count_byte = (uint8_t)wem_count;
-                    fwrite(&wem_count_byte, 1, 1, bnk_file);
-                    
-                    // Write WEM IDs
-                    for (uint32_t i = 0; i < wem_count; i++) {
-                        fwrite(&wem_ids[i], 4, 1, bnk_file);
+                    if (wem_count > 0) {
+                        total_size += 5 + 4 + wem_count * 4;  // type + event_id + wem_count + wem_ids
+                        event_count++;
                     }
                 }
-                free(wem_ids);
+                free(tvItem.pszText);
+                currentItem = TreeView_GetNextSibling(treeview, currentItem);
             }
-            free(tvItem.pszText);
-            currentItem = TreeView_GetNextSibling(treeview, currentItem);
-        }
 
-        fclose(bnk_file);
-        MessageBox(window, "Events BNK file saved successfully", "Success", MB_ICONINFORMATION);
+            // Write total section size and number of objects
+            fwrite(&total_size, 4, 1, bnk_file);
+            fwrite(&event_count, 4, 1, bnk_file);
+
+            // Write event data
+            currentItem = TreeView_GetChild(treeview, rootItem);
+            while (currentItem) {
+                TVITEM tvItem = {
+                    .mask = TVIF_PARAM | TVIF_TEXT,
+                    .hItem = currentItem,
+                    .pszText = malloc(256),
+                    .cchTextMax = 255
+                };
+                TreeView_GetItem(treeview, &tvItem);
+
+                if (!tvItem.lParam) {  // This is an event item
+                    HTREEITEM childItem = TreeView_GetChild(treeview, currentItem);
+                    uint32_t wem_count = 0;
+                    uint32_t* wem_ids = malloc(256 * sizeof(uint32_t));
+
+                    while (childItem) {
+                        TVITEM childTvItem = {
+                            .mask = TVIF_PARAM,
+                            .hItem = childItem
+                        };
+                        TreeView_GetItem(treeview, &childTvItem);
+                        if (childTvItem.lParam) {
+                            AudioData* wemData = (AudioData*)childTvItem.lParam;
+                            wem_ids[wem_count++] = wemData->id;
+                        }
+                        childItem = TreeView_GetNextSibling(treeview, childItem);
+                    }
+
+                    if (wem_count > 0) {
+                        // Write event type (4 for event)
+                        uint8_t type = 4;
+                        fwrite(&type, 1, 1,bnk_file);
+
+                        // Write event ID
+                        uint32_t event_id = strtoul(tvItem.pszText, NULL, 10);
+                        fwrite(&event_id, 4, 1, bnk_file);
+
+                        // Write number of WEM files
+                        uint8_t wem_count_byte = (uint8_t)wem_count;
+                        fwrite(&wem_count_byte, 1, 1, bnk_file);
+
+                        // Write WEM IDs
+                        for (uint32_t i = 0; i < wem_count; i++) {
+                            fwrite(&wem_ids[i], 4, 1, bnk_file);
+                        }
+                    }
+                    free(wem_ids);
+                }
+                free(tvItem.pszText);
+                currentItem = TreeView_GetNextSibling(treeview, currentItem);
+            }
+
+            fclose(bnk_file);
+            MessageBox(window, "Events BNK file saved successfully", "Success", MB_ICONINFORMATION);
+        }
     }
-}
