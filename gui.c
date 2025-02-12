@@ -531,7 +531,5 @@ int WINAPI WinMain(HINSTANCE hInstance, __attribute__((unused)) HINSTANCE hPrevI
     return Msg.wParam;
 }
 
-void SaveEventsBnk(__attribute__((unused)) HWND hwnd, __attribute__((unused)) HTREEITEM currentSelection) {
-    // Dummy implementation - Replace with actual saving logic
-    MessageBox(hwnd, "SaveEventsBnk function called.  Implementation needed.", "Placeholder", MB_OK);
-}
+// Declaration only - implementation is in utility.c
+extern void SaveEventsBnk(HWND hwnd, HTREEITEM currentSelection);
