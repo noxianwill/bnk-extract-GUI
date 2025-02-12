@@ -562,10 +562,10 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             // Write HIRC section header
             fwrite("HIRC", 1, 4, bnk_file);
             uint32_t total_size = 4;  // Start with 4 bytes for event_count
-            
-            // Calculate total size by iterating through events first
-            HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
             uint32_t event_count = 0;
+            
+            // Calculate total size by iterating through events
+            HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
             while (currentItem) {
                 TVITEM tvItem = {
                     .mask = TVIF_PARAM | TVIF_TEXT,
@@ -595,9 +595,8 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             fwrite(&total_size, 4, 1, bnk_file);
             fwrite(&event_count, 4, 1, bnk_file);
 
-            // Calculate total size for events and their WEM mappings
-            uint32_t total_size = 0;
-            uint32_t event_count = 0;
+            // Reset currentItem for second pass
+            currentItem = TreeView_GetChild(treeview, rootItem);
 
             while (currentItem) {
                 TVITEM tvItem = {
