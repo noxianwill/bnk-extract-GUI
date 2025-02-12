@@ -550,17 +550,50 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             }
 
             // Write BKHD section
-            fwrite("BKHD", 1, 4, bnk_file);
+            fwrite("BKHD", 1, 4, bnk_file);  // BKHD magic
             uint32_t bkhd_length = 0x14;
-            fwrite(&bkhd_length, 4, 1, bnk_file);
+            fwrite(&bkhd_length, 4, 1, bnk_file);  // Section length
             uint32_t version = 0x58;  // Version for events.bnk
             fwrite(&version, 4, 1, bnk_file);
             fwrite("\x00\x00\x00\x00", 4, 1, bnk_file);  // Bank ID
             fwrite("\x3e\x5d\x70\x17", 4, 1, bnk_file);  // Standard header bytes
             fwrite("\x00\x00\x00\x00\xfa\x00\x00\x00\x00\x00\x00\x00", 12, 1, bnk_file);
 
-            // Write HIRC section
+            // Write HIRC section header
             fwrite("HIRC", 1, 4, bnk_file);
+            uint32_t total_size = 4;  // Start with 4 bytes for event_count
+            
+            // Calculate total size by iterating through events first
+            HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
+            uint32_t event_count = 0;
+            while (currentItem) {
+                TVITEM tvItem = {
+                    .mask = TVIF_PARAM | TVIF_TEXT,
+                    .hItem = currentItem,
+                    .pszText = malloc(256),
+                    .cchTextMax = 255
+                };
+                TreeView_GetItem(treeview, &tvItem);
+
+                if (!tvItem.lParam) {  // This is an event item
+                    uint32_t wem_count = 0;
+                    HTREEITEM childItem = TreeView_GetChild(treeview, currentItem);
+                    while (childItem) {
+                        wem_count++;
+                        childItem = TreeView_GetNextSibling(treeview, childItem);
+                    }
+                    if (wem_count > 0) {
+                        total_size += 5 + 4 + wem_count * 4;  // type + event_id + wem_count + wem_ids
+                        event_count++;
+                    }
+                }
+                free(tvItem.pszText);
+                currentItem = TreeView_GetNextSibling(treeview, currentItem);
+            }
+
+            // Write HIRC section size and event count
+            fwrite(&total_size, 4, 1, bnk_file);
+            fwrite(&event_count, 4, 1, bnk_file);
 
             // Calculate total size for events and their WEM mappings
             uint32_t total_size = 0;
