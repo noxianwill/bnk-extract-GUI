@@ -563,9 +563,9 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             fwrite("HIRC", 1, 4, bnk_file);
             uint32_t total_size = 4;  // Start with 4 bytes for event_count
             uint32_t event_count = 0;
-            
+
             // Calculate total size by iterating through events
-            HTREEITEM currentItem = TreeView_GetChild(treeview, rootItem);
+            currentItem = TreeView_GetChild(treeview, rootItem);
             while (currentItem) {
                 TVITEM tvItem = {
                     .mask = TVIF_PARAM | TVIF_TEXT,
@@ -595,39 +595,7 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             fwrite(&total_size, 4, 1, bnk_file);
             fwrite(&event_count, 4, 1, bnk_file);
 
-            // Reset currentItem for second pass
-            currentItem = TreeView_GetChild(treeview, rootItem);
-
-            while (currentItem) {
-                TVITEM tvItem = {
-                    .mask = TVIF_PARAM | TVIF_TEXT,
-                    .hItem = currentItem,
-                    .pszText = malloc(256),
-                    .cchTextMax = 255
-                };
-                TreeView_GetItem(treeview, &tvItem);
-
-                if (!tvItem.lParam) {  // This is an event item
-                    uint32_t wem_count = 0;
-                    HTREEITEM childItem = TreeView_GetChild(treeview, currentItem);
-                    while (childItem) {
-                        wem_count++;
-                        childItem = TreeView_GetNextSibling(treeview, childItem);
-                    }
-                    if (wem_count > 0) {
-                        total_size += 5 + 4 + wem_count * 4;  // type + event_id + wem_count + wem_ids
-                        event_count++;
-                    }
-                }
-                free(tvItem.pszText);
-                currentItem = TreeView_GetNextSibling(treeview, currentItem);
-            }
-
-            // Write total section size and number of objects
-            fwrite(&total_size, 4, 1, bnk_file);
-            fwrite(&event_count, 4, 1, bnk_file);
-
-            // Write event data
+            // Second pass: Write actual event data
             currentItem = TreeView_GetChild(treeview, rootItem);
             while (currentItem) {
                 TVITEM tvItem = {
@@ -656,7 +624,7 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
                         childItem = TreeView_GetNextSibling(treeview, childItem);
                     }
 
-                    if (wem_count > 0) {
+                    if(wem_count > 0) {
                         // Write event type (4 for event)
                         uint8_t type = 4;
                         fwrite(&type, 1, 1,bnk_file);
