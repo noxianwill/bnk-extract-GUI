@@ -1,0 +1,49 @@
+
+Walid@Walid-PC MINGW64 ~
+$ cd bnk-extract-GUI/
+
+Walid@Walid-PC MINGW64 ~/bnk-extract-GUI
+$ make
+g++  gui.o utility.o IDropTarget.o settings.o treeview_extension.o resource.res manifest.res .prerequisites_built libs/libbnk-extract.a libs/libvorbis.a libs/libogg.a libs/libvorbisfile.a -g -lole32 -luuid -lcomctl32 -lgdi32 -lComdlg32 -static -Wl,--gc-sections  -o bnk-gui.exe
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe
+: utility.o (symbol from plugin):(.text+0x0): multiple definition of `SaveEventsBnk'; gui.o (symbol
+from plugin):(.text+0x0): first defined here
+lto-wrapper.exe: warning: using serial compilation of 3 LTRANS jobs
+lto-wrapper.exe: note: see the '-flto' option documentation for more information
+collect2.exe: error: ld returned 1 exit status
+make: *** [Makefile:44: bnk-gui.exe] Error 1
+
+Walid@Walid-PC MINGW64 ~/bnk-extract-GUI
+$ cmake -G "Ninja" .
+CMake Deprecation Warning at libogg-1.3.5/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Configuring libogg 1.3.5
+CMake Deprecation Warning at libvorbis-1.3.7/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Configuring vorbis 1.3.7
+-- Configuring done (0.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/Walid/bnk-extract-GUI
+
+Walid@Walid-PC MINGW64 ~/bnk-extract-GUI
+$ ninja
+[1/1] Linking CXX executable bnk-extract-GUI.exe
+FAILED: bnk-extract-GUI.exe
+: && /mingw64/bin/c++.exe  -Wl,--enable-auto-import -mwindows CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bin.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/bnk.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/extract.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/general_utils.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/revorb/revorb.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/sound.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/wpk.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/codebook.cpp.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/crc.c.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/ww2ogg.cpp.o CMakeFiles/bnk-extract-GUI.dir/bnk-extract/ww2ogg/wwriff.cpp.o CMakeFiles/bnk-extract-GUI.dir/IDropTarget.c.o CMakeFiles/bnk-extract-GUI.dir/gui.c.o CMakeFiles/bnk-extract-GUI.dir/manifest.rc.obj CMakeFiles/bnk-extract-GUI.dir/resource.rc.obj CMakeFiles/bnk-extract-GUI.dir/settings.c.o CMakeFiles/bnk-extract-GUI.dir/treeview_extension.c.o CMakeFiles/bnk-extract-GUI.dir/utility.c.o -o bnk-extract-GUI.exe -Wl,--out-implib,libbnk-extract-GUI.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libogg-1.3.5/libogg.a  libvorbis-1.3.7/lib/libvorbis.a  libvorbis-1.3.7/lib/libvorbisenc.a  libvorbis-1.3.7/lib/libvorbisfile.a  -lole32  -luuid  -lcomctl32  -lgdi32  -lcomdlg32  libvorbis-1.3.7/lib/libvorbis.a  libogg-1.3.5/libogg.a  -lm && :
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles/bnk-extract-GUI.dir/utility.c.o:utility.c:(.text+0x2423): multiple definition of `SaveEventsBnk'; CMakeFiles/bnk-extract-GUI.dir/gui.c.o:gui.c:(.text+0x2971): first defined here
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
