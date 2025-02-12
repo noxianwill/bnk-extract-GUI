@@ -219,7 +219,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                     Button_Enable(ReplaceButton, isChildItem);
                     Button_Enable(PlayAudioButton, isChildItem);
                     Button_Enable(AddWemButton, isEventItem); // Enable Add Wem button for event items
-                    Button_Enable(SaveEventsButton, isEventItem); // Enable SaveEvents button for event items
+                    
+                    // Enable SaveEvents button whenever there's content in the treeview
+                    Button_Enable(SaveEventsButton, TreeView_GetRoot(treeview) != NULL);
 
                     return 0;
                 }
