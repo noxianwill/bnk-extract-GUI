@@ -559,13 +559,6 @@ void SaveEventsBnk(HWND window, __attribute__((unused)) HTREEITEM eventItem) {
             fwrite("\x3e\x5d\x70\x17", 4, 1, bnk_file);  // Standard header bytes
             fwrite("\x00\x00\x00\x00\xfa\x00\x00\x00\x00\x00\x00\x00", 12, 1, bnk_file);
 
-            // Write BKHD section first
-            fwrite("BKHD", 1, 4, bnk_file);
-            uint32_t bkhd_length = 4;
-            fwrite(&bkhd_length, 4, 1, bnk_file);
-            uint32_t version = 0x88;  // Common version for bnk files
-            fwrite(&version, 4, 1, bnk_file);
-
             // Write HIRC section
             fwrite("HIRC", 1, 4, bnk_file);
 
